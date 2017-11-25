@@ -10,6 +10,8 @@ class Pago extends Model
       'id_contrato',
       'id_pasajero',
       'cuotas',
-      'total_pago'
+      'total_pago',
+      'usuario',
+      'observaciones',
     ];
 }

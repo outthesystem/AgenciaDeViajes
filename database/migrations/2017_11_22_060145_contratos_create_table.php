@@ -17,7 +17,14 @@ class ContratosCreateTable extends Migration
             $table->increments('id');
             $table->string('nombre_contrato');
             $table->string('programa_contrato');
+            $table->string('destino_contrato');
+            $table->string('establecimiento_contrato');
             $table->date('fechav_contrato');
+            $table->double('total')->nullable();
+            $table->double('pagado')->nullable();
+            $table->double('deuda')->nullable();
+            $table->string('usuario');
+            $table->text('observaciones')->nullable();
             $table->timestamps();
         });
     }

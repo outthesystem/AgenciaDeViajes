@@ -18,7 +18,9 @@ class PagosCreateTable extends Migration
             $table->integer('id_contrato');
             $table->integer('id_pasajero');
             $table->integer('cuotas');
-            $table->double('total_pago');
+            $table->double('total_pago', 8, 2);
+            $table->string('usuario');
+            $table->text('observaciones')->nullable();
             $table->timestamps();
         });
     }
