@@ -1,6 +1,9 @@
-#Sistema para agencias de viaje
+Sistema para agencia de viajes
+==========
 
-###Sistema de gestion para empresas de viajes y tours
+Sistema de gestion para empresas de viajes y tours
+
+[PayPal](https://www.paypal.me/outthesystem/)
 
 Incluye varias herramientas para controlar la facturacion y organizacion para la empresa:
 * Control de pagos
@@ -10,13 +13,15 @@ Incluye varias herramientas para controlar la facturacion y organizacion para la
 * Control de permisos de usuario y roles
 * Etc
 
-###Requisitos
-PHP 7
-MySQL 5
-Laravel 5.5
-Composer
+Requisitos
+--------------------
++ PHP 7
++ MySQL 5
++ Laravel 5.5
++ Composer
 
-###Instalacion
+Instalacion
+--------------------
 
 1. Descargar este repositorio o clonar.
 
@@ -33,3 +38,5 @@ Composer
 5. Listo :)
 
 Se agradece la colaboracion con informes de bugs en la seccion issues.
+
+[Comprame un cafe](https://www.paypal.me/outthesystem/)

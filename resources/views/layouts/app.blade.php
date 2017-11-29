@@ -7,13 +7,11 @@
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/tether.min.js') }}"></script>
     <script src="{{ asset('js/pace.min.js') }}"></script>
-    <script src="{{ asset('js/popper.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+      <script src="{{ asset('js/popper.min.js') }}"></script>
+      <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/angular.min.js') }}"></script>
     <script src="{{ asset('js/searchcontratos.js') }}"></script>
-    <script src="{{ asset('js/jquery-editable-select.js') }}"></script>
-    <script src="{{ asset('js/ui-bootstrap-tpls-2.5.0.min.js') }}"></script>
 
     <script src="{{ asset('js/contratos_pasajeros.js') }}"></script>
     <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
@@ -94,6 +92,25 @@
                 <a class="nav-link   {{ request()->is('pasajero') ? 'active' : '' }}
                   {{ request()->is('addpago/*') ? 'active' : '' }}" href="{{route('pasajero.index')}}" ><i class="icon-speedometer"></i> <i class="fa fa-address-book-o"></i> Pasajeros </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link   {{ request()->is('recibo') ? 'active' : '' }}
+                  {{ request()->is('recibo') ? 'active' : '' }}" href="{{route('recibos.index')}}" ><i class="icon-speedometer"></i> <i class="fa fa-usd"></i> Recibos </a>
+              </li>
+              <li class="nav-title">
+               Usuarios
+             </li>
+             <li class="nav-item">
+               <a class="nav-link   {{ request()->is('users') ? 'active' : '' }}
+                 {{ request()->is('users') ? 'active' : '' }}" href="{{route('users.index')}}" ><i class="icon-speedometer"></i> <i class="fa fa-user"></i> Usuarios </a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link   {{ request()->is('roles') ? 'active' : '' }}
+                 {{ request()->is('roles') ? 'active' : '' }}" href="{{route('roles.index')}}" ><i class="icon-speedometer"></i> <i class="fa fa-check"></i> Roles </a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link   {{ request()->is('permissions') ? 'active' : '' }}
+                 {{ request()->is('permissions') ? 'active' : '' }}" href="{{route('permissions.index')}}" ><i class="icon-speedometer"></i> <i class="fa fa-th-list"></i> Permisos </a>
+             </li>
           @endguest
         </ul>
       </nav>

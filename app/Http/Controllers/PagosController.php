@@ -21,6 +21,13 @@ class PagosController extends Controller
       return view('pago.index', compact('pasajeros'));
     }
 
+    public function indexRecibo()
+    {
+      $recibos = Pago::all();
+
+      return view('pago.indexpago', compact('recibos'));
+    }
+
     public function AddPago($id)
     {
       $pasajero = Pasajero::find($id);
